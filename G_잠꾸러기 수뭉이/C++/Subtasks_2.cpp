@@ -24,11 +24,13 @@ public:
         adj.clear(); adj.resize(n + 1);
     }
 
+    // 간선 추가
     void add(ll s, ll e, ll c, ll l){
         adj[s].push_back({e, c, l});
         adj[e].push_back({s, c, l});
     }
 
+    // s -> e 최단거리 반환
     ll ret(ll s, ll e, ll t){
         dist.clear(); dist.resize(n + 1, INF);
         while(!pq.empty()) pq.pop();
@@ -40,6 +42,7 @@ public:
             dist[cur] = cd;
 
             for(auto&[nxt, co, ban] : adj[cur]){
+                // 현재 최단거리가 막차 시간 이상이면 건너 뜀
                 if(cd >= ban) continue;
                 if(dist[nxt] <= cd + co) continue;
                 pq.push({cd + co, nxt});
