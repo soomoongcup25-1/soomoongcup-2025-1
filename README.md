@@ -1,6 +1,8 @@
 # 수뭉컵 2025-1 결과
 
 ![Top 10 Teams](/file/Top%2010%20Teams.png)
+<img width="959" alt="soomoongcup3-rank-by-success-time" src="https://github.com/user-attachments/assets/acd61d9f-ffb3-49d7-8872-ddbd25cff875" />
+
 
 | 비고     | 사용자 명     | 전체 순위 | 총 점수 | 가장 최근에 성공 or 부분 성공한 시간 |
 | -------- | ------------ | --------- | ------- | --------- |
@@ -55,6 +57,7 @@
 -   고명은
 -   서연우
 -   백송현
+-   김준환
 -   김준환
 
 ### 후원
