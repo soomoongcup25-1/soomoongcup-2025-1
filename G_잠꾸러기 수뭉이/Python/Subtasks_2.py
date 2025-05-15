@@ -18,10 +18,11 @@ class _dij:
         self.dist = []
         self.pq = []
 
+    # 간선 추가
     def add(self, s, e, c, l):
         self.adj[s].append(self.node(e, c, l))
         self.adj[e].append(self.node(s, c, l))
-
+    # s -> e 최단거리 반환
     def ret(self, s, e, t):
         self.dist = [INF] * (self.n + 1)
         self.pq.clear()
@@ -34,6 +35,7 @@ class _dij:
             self.dist[cur] = cd
 
             for nxt_node in self.adj[cur]:
+                # 현재 최단거리가 막차 시간 이상이면 건너 뜀
                 nxt, co, ban = nxt_node.nxt, nxt_node.c, nxt_node.l
                 if cd >= ban:
                     continue
