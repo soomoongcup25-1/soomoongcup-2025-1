@@ -1,7 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-# N, A, B, x 값들을 한 줄로 입력받아 언패킹
 N, A, B = map(int, input().split())
 x_values = list(map(int, input().split()))
 mx = max(x_values)
