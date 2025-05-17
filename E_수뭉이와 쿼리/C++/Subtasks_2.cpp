@@ -8,7 +8,7 @@ ll pre[MAX];
 
 // 누적합 계산
 void init(){
-    for(int i = 1;i <= n;i++){
+    for(int i = 1;i <= N;i++){
         pre[i] = pre[i - 1];
         if(S[i - 1] == 'S') pre[i]++;
     }
