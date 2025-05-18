@@ -2,7 +2,7 @@
 using namespace std; using ll = long long;
 #define fastio cin.tie(0), cout.tie(0), ios::sync_with_stdio(0);
 
-constexpr ll INF = 0x3f3f3f3f3f3f3f3f;
+constexpr ll INF = 1e12;
 constexpr ll MAX = 30101;
 ll N, A[MAX], B[MAX];
 ll dp[MAX][101];
